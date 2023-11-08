@@ -1,0 +1,20 @@
+/* Custom styles for the navbar */
+.navbar {
+    background-color: #008080; /* Teal color */
+}
+
+.navbar .navbar-brand {
+    color: #fff; /* White text color for the brand */
+}
+
+.navbar .nav-link {
+    color: #fff; /* White text color for menu items */
+}
+
+.navbar .nav-link:hover {
+    color: #99e6e6; /* Lighter teal on hover */
+}
+
+#navbarLinks {
+    float: right;
+}

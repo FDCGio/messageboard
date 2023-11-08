@@ -1,0 +1,158 @@
+/* Style for chat container */
+.card-body {
+    max-height: 400px; /* Set the maximum height */
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds the height */
+}
+.receiver .profile-img {
+    cursor: pointer;
+}
+/* Style for individual messages */
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Style for sender's message */
+.message.sender {
+    justify-content: flex-end;
+}
+
+.message.sender .profile-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.message.sender .message-content {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Style for receiver's message */
+.message.receiver .profile-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.message.receiver .message-content {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+/* Style for message time */
+.message-time {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+/* Start of card-footer */
+.card-footer .reply-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.card-footer .reply-input textarea {
+    flex: 1;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card-footer .reply-input button {
+    background-color: #0084ff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-footer .reply-input button:hover {
+    background-color: #0060e0;
+}
+/* End of card-footer */
+
+/* Start of card-header */
+.card-header {
+    background-color: #0084ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h2 {
+    margin: 0;
+}
+
+.card-header .messenger-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.card-header .conversation-title {
+    font-size: 20px;
+}
+/* End of card header */
+
+/* Delete icon */
+.delete-icon {
+    margin-right: 10px;
+}
+
+
+.profile-image {
+    text-align: center;
+}
+
+.profile-image img {
+    max-width: 150px; /* Adjust the image size as needed */
+    border-radius: 50%; /* Makes the image round */
+}
+
+/* Arrange user details beside each other */
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style user info details */
+.user-info p {
+    margin: 5px 0;
+}
+
+/* Style modal header and close button */
+.modal-header {
+    background-color: #007BFF;
+    color: white;
+}
+
+.modal-header button.close {
+    color: white;
+}
